@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="processForm" method="get">
+<form action="processFormV2" method="get">
 	<input type="text" name="studentName"
 	placeholder="Enter your name..."/>
 	
