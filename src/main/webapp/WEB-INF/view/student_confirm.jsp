@@ -7,9 +7,14 @@
 <title>Registered</title>
 </head>
 <body>
-	<h3>Successfully Registered!!</h3>
-	<hr>
-	Hello ${student.firstName} ${student.lastName} from ${student.country}
+
+	<br><br>
+	<strong>${student.firstName} ${student.lastName}</strong> from <strong>${student.country}</strong>
+	<br>
+	Primary Language: <strong>${student.language}</strong>. Secondary Language: <strong>${student.secondaryLanguage}</strong>
+	
+	
+	
 
 </body>
 </html>

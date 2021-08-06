@@ -10,6 +10,28 @@ public class Student {
 	
 	private LinkedHashMap<String,String> countryOptions;
 	
+	private String language,secondaryLanguage;
+	
+	public String getLanguage() {
+		return language;
+	}
+
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+
+	public String getSecondaryLanguage() {
+		return secondaryLanguage;
+	}
+
+
+	public void setSecondaryLanguage(String secondaryLanguage) {
+		this.secondaryLanguage = secondaryLanguage;
+	}
+
+
 	public Student() {
 		
 		// populate country options

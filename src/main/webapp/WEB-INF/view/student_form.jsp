@@ -27,6 +27,20 @@
 			<form:options items = "${student.countryOptions}"/>
 		</form:select>
 		<br><br>
+		Primary Language:
+		<br>
+		Java <form:radiobutton path="language" value="Java"/>  
+        C++ <form:radiobutton path="language" value="C++"/>
+        C <form:radiobutton path="language" value="C"/>
+        
+        <br><br>
+		Secondary Language:
+		<br>
+		Java <form:radiobutton path="secondaryLanguage" value="Java"/>  
+        C++ <form:radiobutton path="secondaryLanguage" value="C++"/>
+        C <form:radiobutton path="secondaryLanguage" value="C"/>
+        <br><br>
+        
 		<input type="submit" value="Submit"/>
 	</form:form>
 	
