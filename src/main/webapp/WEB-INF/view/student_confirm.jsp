@@ -8,9 +8,8 @@
 </head>
 <body>
 	<h3>Successfully Registered!!</h3>
-	
-	<br>
-	<h6>Hello ${student.firstName} ${student.lastName}</h6>
+	<hr>
+	Hello ${student.firstName} ${student.lastName} from ${student.country}
 
 </body>
 </html>
