@@ -2,9 +2,15 @@ package com.spring.mvc;
 
 import java.util.LinkedHashMap;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Student {
 	
+	@NotNull(message="Cannot be Empty")
 	private String firstName;
+	
+	@Size(min=3,message="Must be larger than 3")
 	private String lastName;
 	private String country;
 	
