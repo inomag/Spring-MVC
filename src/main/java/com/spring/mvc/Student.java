@@ -2,16 +2,40 @@ package com.spring.mvc;
 
 import java.util.LinkedHashMap;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class Student {
 	
-	@NotNull(message="Cannot be Empty")
 	private String firstName;
 	
 	@Size(min=3,message="Must be larger than 3")
 	private String lastName;
+	
+	private String phoneNo;
+	
+	@Min(value=18, message="Must be greater than 18")
+	@Max(value=25, message="Must be less than 25")
+	private int age;
+	
+	public String getPhoneNo() {
+		return phoneNo;
+	}
+
+
+	public void setPhoneNo(String phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
 	private String country;
 	
 	private LinkedHashMap<String,String> countryOptions;

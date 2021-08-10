@@ -7,9 +7,8 @@
 <title>Registered</title>
 </head>
 <body>
-
-	<br><br>
-	<strong>${student.firstName} ${student.lastName}</strong> from <strong>${student.country}</strong>
+	<br>
+	<strong>${student.firstName} ${student.lastName}, ${student.age}</strong> from <strong>${student.country}</strong>
 	<br>
 	Primary Language: <strong>${student.language}</strong>. Secondary Language: <strong>${student.secondaryLanguage}</strong>
 	

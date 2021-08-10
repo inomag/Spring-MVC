@@ -16,12 +16,18 @@
 	<hr>
 	
 	<form:form action="processForm" modelAttribute ="student">
-		First Name* :  <form:input path="firstName"/>
+		First Name :  <form:input path="firstName"/>
 		<form:errors path="firstName" cssClass="error"/>
 		
 		<br><br>
-		Last Name* :  <form:input path="lastName"/>
+		Last Name :  <form:input path="lastName"/>
 		<form:errors path="lastName" cssClass="error"/>
+		<br><br>
+		Age : <form:input path="age" type="number"/>
+		<form:errors path="age" cssClass="error"/>
+		<br><br>
+		Phone No. :  <form:input path="phoneNo"/>
+		<form:errors path="phoneNo" cssClass="error"/>
 		<br><br>
 		Country:  <form:select path="country">
 			<%-- <form:option value="" label="Select Country"></form:option>
