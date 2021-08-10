@@ -26,7 +26,7 @@
 		Age : <form:input path="age" type="number"/>
 		<form:errors path="age" cssClass="error"/>
 		<br><br>
-		Phone No. :  <form:input path="phoneNo"/>
+		Phone No. :  <form:input path="phoneNo" type="number"/>
 		<form:errors path="phoneNo" cssClass="error"/>
 		<br><br>
 		Country:  <form:select path="country">

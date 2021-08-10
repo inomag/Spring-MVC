@@ -6,16 +6,19 @@ import javax.validation.constraints.*;
 
 public class Student {
 	
+	@NotNull(message="is Required")
 	private String firstName;
 	
-	@Size(min=3,message="Must be larger than 3")
+	@NotNull(message="is Required")
 	private String lastName;
 	
+	@Pattern(regexp="^[0-9]{10}",message="Not a valid phone number")
 	private String phoneNo;
 	
 	@Min(value=18, message="Must be greater than 18")
 	@Max(value=25, message="Must be less than 25")
 	private int age;
+	
 	
 	public String getPhoneNo() {
 		return phoneNo;
